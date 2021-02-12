@@ -1,0 +1,58 @@
+*{
+    font-family: "Comfortaa", cursive;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.calculator {
+    border-radius: 10px;
+    border: solid 2px #000;
+    max-width: 20rem;
+}
+
+.calculator__screen {
+    height: 5rem;
+    border-radius: 5px;
+    background-color: rgb(246, 255, 250);
+    border: solid 2px black;
+}
+
+.calculator__keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.key {
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.key--divisor,
+.key--plus,
+.key--minus,
+.key--multiplicator {
+    grid-column: 4;
+}
+
+.key--plus {
+    grid-row: 1;
+}
+
+.key--multiplicator {
+    grid-row: 2;
+}
+
+.key--divisor {
+    grid-row: 3;
+}
+
+.key--minus {
+    grid-row: 4;
+}
+
+.key--equal {
+    grid-column: 3/5;
+    grid-row: 5;
+}
